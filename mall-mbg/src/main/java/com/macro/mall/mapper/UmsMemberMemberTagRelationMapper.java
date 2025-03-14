@@ -2,8 +2,9 @@ package com.macro.mall.mapper;
 
 import com.macro.mall.model.UmsMemberMemberTagRelation;
 import com.macro.mall.model.UmsMemberMemberTagRelationExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface UmsMemberMemberTagRelationMapper {
     long countByExample(UmsMemberMemberTagRelationExample example);
@@ -12,19 +13,19 @@ public interface UmsMemberMemberTagRelationMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(UmsMemberMemberTagRelation record);
+    int insert(UmsMemberMemberTagRelation row);
 
-    int insertSelective(UmsMemberMemberTagRelation record);
+    int insertSelective(UmsMemberMemberTagRelation row);
 
     List<UmsMemberMemberTagRelation> selectByExample(UmsMemberMemberTagRelationExample example);
 
     UmsMemberMemberTagRelation selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") UmsMemberMemberTagRelation record, @Param("example") UmsMemberMemberTagRelationExample example);
+    int updateByExampleSelective(@Param("row") UmsMemberMemberTagRelation row, @Param("example") UmsMemberMemberTagRelationExample example);
 
-    int updateByExample(@Param("record") UmsMemberMemberTagRelation record, @Param("example") UmsMemberMemberTagRelationExample example);
+    int updateByExample(@Param("row") UmsMemberMemberTagRelation row, @Param("example") UmsMemberMemberTagRelationExample example);
 
-    int updateByPrimaryKeySelective(UmsMemberMemberTagRelation record);
+    int updateByPrimaryKeySelective(UmsMemberMemberTagRelation row);
 
-    int updateByPrimaryKey(UmsMemberMemberTagRelation record);
+    int updateByPrimaryKey(UmsMemberMemberTagRelation row);
 }

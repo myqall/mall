@@ -2,8 +2,9 @@ package com.macro.mall.mapper;
 
 import com.macro.mall.model.SmsFlashPromotionSession;
 import com.macro.mall.model.SmsFlashPromotionSessionExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SmsFlashPromotionSessionMapper {
     long countByExample(SmsFlashPromotionSessionExample example);
@@ -12,19 +13,19 @@ public interface SmsFlashPromotionSessionMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(SmsFlashPromotionSession record);
+    int insert(SmsFlashPromotionSession row);
 
-    int insertSelective(SmsFlashPromotionSession record);
+    int insertSelective(SmsFlashPromotionSession row);
 
     List<SmsFlashPromotionSession> selectByExample(SmsFlashPromotionSessionExample example);
 
     SmsFlashPromotionSession selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") SmsFlashPromotionSession record, @Param("example") SmsFlashPromotionSessionExample example);
+    int updateByExampleSelective(@Param("row") SmsFlashPromotionSession row, @Param("example") SmsFlashPromotionSessionExample example);
 
-    int updateByExample(@Param("record") SmsFlashPromotionSession record, @Param("example") SmsFlashPromotionSessionExample example);
+    int updateByExample(@Param("row") SmsFlashPromotionSession row, @Param("example") SmsFlashPromotionSessionExample example);
 
-    int updateByPrimaryKeySelective(SmsFlashPromotionSession record);
+    int updateByPrimaryKeySelective(SmsFlashPromotionSession row);
 
-    int updateByPrimaryKey(SmsFlashPromotionSession record);
+    int updateByPrimaryKey(SmsFlashPromotionSession row);
 }

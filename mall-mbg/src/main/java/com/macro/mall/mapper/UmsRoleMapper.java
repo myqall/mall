@@ -2,8 +2,9 @@ package com.macro.mall.mapper;
 
 import com.macro.mall.model.UmsRole;
 import com.macro.mall.model.UmsRoleExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface UmsRoleMapper {
     long countByExample(UmsRoleExample example);
@@ -12,19 +13,19 @@ public interface UmsRoleMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(UmsRole record);
+    int insert(UmsRole row);
 
-    int insertSelective(UmsRole record);
+    int insertSelective(UmsRole row);
 
     List<UmsRole> selectByExample(UmsRoleExample example);
 
     UmsRole selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") UmsRole record, @Param("example") UmsRoleExample example);
+    int updateByExampleSelective(@Param("row") UmsRole row, @Param("example") UmsRoleExample example);
 
-    int updateByExample(@Param("record") UmsRole record, @Param("example") UmsRoleExample example);
+    int updateByExample(@Param("row") UmsRole row, @Param("example") UmsRoleExample example);
 
-    int updateByPrimaryKeySelective(UmsRole record);
+    int updateByPrimaryKeySelective(UmsRole row);
 
-    int updateByPrimaryKey(UmsRole record);
+    int updateByPrimaryKey(UmsRole row);
 }

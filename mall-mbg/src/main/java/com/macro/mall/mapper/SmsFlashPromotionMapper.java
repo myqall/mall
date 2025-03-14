@@ -2,8 +2,9 @@ package com.macro.mall.mapper;
 
 import com.macro.mall.model.SmsFlashPromotion;
 import com.macro.mall.model.SmsFlashPromotionExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SmsFlashPromotionMapper {
     long countByExample(SmsFlashPromotionExample example);
@@ -12,19 +13,19 @@ public interface SmsFlashPromotionMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(SmsFlashPromotion record);
+    int insert(SmsFlashPromotion row);
 
-    int insertSelective(SmsFlashPromotion record);
+    int insertSelective(SmsFlashPromotion row);
 
     List<SmsFlashPromotion> selectByExample(SmsFlashPromotionExample example);
 
     SmsFlashPromotion selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") SmsFlashPromotion record, @Param("example") SmsFlashPromotionExample example);
+    int updateByExampleSelective(@Param("row") SmsFlashPromotion row, @Param("example") SmsFlashPromotionExample example);
 
-    int updateByExample(@Param("record") SmsFlashPromotion record, @Param("example") SmsFlashPromotionExample example);
+    int updateByExample(@Param("row") SmsFlashPromotion row, @Param("example") SmsFlashPromotionExample example);
 
-    int updateByPrimaryKeySelective(SmsFlashPromotion record);
+    int updateByPrimaryKeySelective(SmsFlashPromotion row);
 
-    int updateByPrimaryKey(SmsFlashPromotion record);
+    int updateByPrimaryKey(SmsFlashPromotion row);
 }

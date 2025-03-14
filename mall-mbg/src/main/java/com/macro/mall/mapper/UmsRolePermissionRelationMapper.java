@@ -2,8 +2,9 @@ package com.macro.mall.mapper;
 
 import com.macro.mall.model.UmsRolePermissionRelation;
 import com.macro.mall.model.UmsRolePermissionRelationExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface UmsRolePermissionRelationMapper {
     long countByExample(UmsRolePermissionRelationExample example);
@@ -12,19 +13,19 @@ public interface UmsRolePermissionRelationMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(UmsRolePermissionRelation record);
+    int insert(UmsRolePermissionRelation row);
 
-    int insertSelective(UmsRolePermissionRelation record);
+    int insertSelective(UmsRolePermissionRelation row);
 
     List<UmsRolePermissionRelation> selectByExample(UmsRolePermissionRelationExample example);
 
     UmsRolePermissionRelation selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") UmsRolePermissionRelation record, @Param("example") UmsRolePermissionRelationExample example);
+    int updateByExampleSelective(@Param("row") UmsRolePermissionRelation row, @Param("example") UmsRolePermissionRelationExample example);
 
-    int updateByExample(@Param("record") UmsRolePermissionRelation record, @Param("example") UmsRolePermissionRelationExample example);
+    int updateByExample(@Param("row") UmsRolePermissionRelation row, @Param("example") UmsRolePermissionRelationExample example);
 
-    int updateByPrimaryKeySelective(UmsRolePermissionRelation record);
+    int updateByPrimaryKeySelective(UmsRolePermissionRelation row);
 
-    int updateByPrimaryKey(UmsRolePermissionRelation record);
+    int updateByPrimaryKey(UmsRolePermissionRelation row);
 }

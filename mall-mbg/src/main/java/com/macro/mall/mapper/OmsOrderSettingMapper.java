@@ -2,8 +2,9 @@ package com.macro.mall.mapper;
 
 import com.macro.mall.model.OmsOrderSetting;
 import com.macro.mall.model.OmsOrderSettingExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface OmsOrderSettingMapper {
     long countByExample(OmsOrderSettingExample example);
@@ -12,19 +13,19 @@ public interface OmsOrderSettingMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(OmsOrderSetting record);
+    int insert(OmsOrderSetting row);
 
-    int insertSelective(OmsOrderSetting record);
+    int insertSelective(OmsOrderSetting row);
 
     List<OmsOrderSetting> selectByExample(OmsOrderSettingExample example);
 
     OmsOrderSetting selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") OmsOrderSetting record, @Param("example") OmsOrderSettingExample example);
+    int updateByExampleSelective(@Param("row") OmsOrderSetting row, @Param("example") OmsOrderSettingExample example);
 
-    int updateByExample(@Param("record") OmsOrderSetting record, @Param("example") OmsOrderSettingExample example);
+    int updateByExample(@Param("row") OmsOrderSetting row, @Param("example") OmsOrderSettingExample example);
 
-    int updateByPrimaryKeySelective(OmsOrderSetting record);
+    int updateByPrimaryKeySelective(OmsOrderSetting row);
 
-    int updateByPrimaryKey(OmsOrderSetting record);
+    int updateByPrimaryKey(OmsOrderSetting row);
 }

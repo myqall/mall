@@ -2,8 +2,9 @@ package com.macro.mall.mapper;
 
 import com.macro.mall.model.CmsPrefrenceArea;
 import com.macro.mall.model.CmsPrefrenceAreaExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface CmsPrefrenceAreaMapper {
     long countByExample(CmsPrefrenceAreaExample example);
@@ -12,9 +13,9 @@ public interface CmsPrefrenceAreaMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(CmsPrefrenceArea record);
+    int insert(CmsPrefrenceArea row);
 
-    int insertSelective(CmsPrefrenceArea record);
+    int insertSelective(CmsPrefrenceArea row);
 
     List<CmsPrefrenceArea> selectByExampleWithBLOBs(CmsPrefrenceAreaExample example);
 
@@ -22,15 +23,15 @@ public interface CmsPrefrenceAreaMapper {
 
     CmsPrefrenceArea selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") CmsPrefrenceArea record, @Param("example") CmsPrefrenceAreaExample example);
+    int updateByExampleSelective(@Param("row") CmsPrefrenceArea row, @Param("example") CmsPrefrenceAreaExample example);
 
-    int updateByExampleWithBLOBs(@Param("record") CmsPrefrenceArea record, @Param("example") CmsPrefrenceAreaExample example);
+    int updateByExampleWithBLOBs(@Param("row") CmsPrefrenceArea row, @Param("example") CmsPrefrenceAreaExample example);
 
-    int updateByExample(@Param("record") CmsPrefrenceArea record, @Param("example") CmsPrefrenceAreaExample example);
+    int updateByExample(@Param("row") CmsPrefrenceArea row, @Param("example") CmsPrefrenceAreaExample example);
 
-    int updateByPrimaryKeySelective(CmsPrefrenceArea record);
+    int updateByPrimaryKeySelective(CmsPrefrenceArea row);
 
-    int updateByPrimaryKeyWithBLOBs(CmsPrefrenceArea record);
+    int updateByPrimaryKeyWithBLOBs(CmsPrefrenceArea row);
 
-    int updateByPrimaryKey(CmsPrefrenceArea record);
+    int updateByPrimaryKey(CmsPrefrenceArea row);
 }

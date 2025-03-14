@@ -2,8 +2,9 @@ package com.macro.mall.mapper;
 
 import com.macro.mall.model.CmsTopicComment;
 import com.macro.mall.model.CmsTopicCommentExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface CmsTopicCommentMapper {
     long countByExample(CmsTopicCommentExample example);
@@ -12,19 +13,19 @@ public interface CmsTopicCommentMapper {
 
     int deleteByPrimaryKey(Long id);
 
-    int insert(CmsTopicComment record);
+    int insert(CmsTopicComment row);
 
-    int insertSelective(CmsTopicComment record);
+    int insertSelective(CmsTopicComment row);
 
     List<CmsTopicComment> selectByExample(CmsTopicCommentExample example);
 
     CmsTopicComment selectByPrimaryKey(Long id);
 
-    int updateByExampleSelective(@Param("record") CmsTopicComment record, @Param("example") CmsTopicCommentExample example);
+    int updateByExampleSelective(@Param("row") CmsTopicComment row, @Param("example") CmsTopicCommentExample example);
 
-    int updateByExample(@Param("record") CmsTopicComment record, @Param("example") CmsTopicCommentExample example);
+    int updateByExample(@Param("row") CmsTopicComment row, @Param("example") CmsTopicCommentExample example);
 
-    int updateByPrimaryKeySelective(CmsTopicComment record);
+    int updateByPrimaryKeySelective(CmsTopicComment row);
 
-    int updateByPrimaryKey(CmsTopicComment record);
+    int updateByPrimaryKey(CmsTopicComment row);
 }
