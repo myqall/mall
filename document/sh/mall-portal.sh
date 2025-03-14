@@ -14,5 +14,6 @@ docker run -p 8085:8085 --name ${app_name} \
 -e TZ="Asia/Shanghai" \
 -v /etc/localtime:/etc/localtime \
 -v /mydata/app/${app_name}/logs:/var/logs \
+--network 1panel-network \
 -d mall/${app_name}:1.0-SNAPSHOT
 echo '----start container----'
