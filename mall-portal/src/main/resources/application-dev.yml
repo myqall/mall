@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://nas.myqahxl.xin:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://srv.myqahxl.xin:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: mall
-    password: mall123456
+    password: 4rE5cnmrimKxWnJB
     druid:
       initial-size: 5 #连接池初始化大小
       min-idle: 10 #最小空闲连接数
@@ -17,23 +17,23 @@ spring:
         login-password: druid
   data:
     mongodb:
-      host: nas.myqahxl.xin
+      host: srv.myqahxl.xin
       port: 27017
       database: mall-port
       username: mall-port
-      password: mall-port123456
+      password: mall-port
   redis:
-    host: nas.myqahxl.xin # Redis服务器地址
+    host: srv.myqahxl.xin # Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
     port: 6379 # Redis服务器连接端口
-    password: myqall520 # Redis服务器连接密码（默认为空）
+    password: redis_nKhctf # Redis服务器连接密码（默认为空）
     timeout: 300ms # 连接超时时间（毫秒）
   rabbitmq:
-    host: nas.myqahxl.xin
+    host: srv.myqahxl.xin
     port: 5672
     virtual-host: /
-    username: admin
-    password: myqall520
+    username: rabbitmq
+    password: 4rE5cnlijerKxWnJB
 
 logging:
   level:

@@ -9,7 +9,7 @@ echo '----rm none images----'
 docker run -p 8085:8085 --name ${app_name} \
 --link mysql:db \
 --link redis:redis \
---link mongo:mongo \
+--link mongodb:mongo \
 --link rabbitmq:rabbit \
 -e TZ="Asia/Shanghai" \
 -v /etc/localtime:/etc/localtime \
