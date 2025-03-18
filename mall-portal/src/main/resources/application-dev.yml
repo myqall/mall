@@ -20,8 +20,6 @@ spring:
       host: srv.myqahxl.xin
       port: 27017
       database: mall-port
-      username: mall-port
-      password: mall-port
   redis:
     host: srv.myqahxl.xin # Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
@@ -31,9 +29,9 @@ spring:
   rabbitmq:
     host: srv.myqahxl.xin
     port: 5672
-    virtual-host: /
-    username: rabbitmq
-    password: 4rE5cnlijerKxWnJB
+    virtual-host: /mall
+    username: mall
+    password: mall
 
 logging:
   level:
